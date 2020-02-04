@@ -77,13 +77,13 @@ void Controller::spin(int pwm)
             break;
             
        case DRV8833:
-            if(pwm > 0) // forward 
+            if(pwm > 0) // FORWARD 
             {
                 digitalWrite(motor_pinA_, LOW);
                 digitalWrite(motor_pinB_, abs(pwm));
        
             }
-            else if(pwm < 0) // forward 
+            else if(pwm < 0) // REVERSE
             {
                 digitalWrite(motor_pinA_, abs(pwm));
                 digitalWrite(motor_pinB_, LOW);
