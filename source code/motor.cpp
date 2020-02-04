@@ -23,8 +23,8 @@ Controller::Controller(driver motor_driver, int pwm_pin, int motor_pinA, int mot
             pinMode(motor_pinB_, OUTPUT);
 
            //ensure that the motor is in neutral state during bootup
-            analogWrite(motor_pinB_, 0);
-            analogWrite(motor_pinA_, 0);
+            analogWrite(motor_pinB_, HIGH);
+            analogWrite(motor_pinA_, HIGH);
 
             break;
             
