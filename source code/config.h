@@ -2,7 +2,6 @@
 modified Christopher Coballes
 Developer @Hi-Techno Barrio
 */
-
 #ifndef _CONFIG_H
 #define _CONFIG_H
 
@@ -14,18 +13,18 @@ Developer @Hi-Techno Barrio
 // #define LINO_BASE MECANUM         // Mecanum drive robot
 
 //uncomment the motor driver you're using
-#define USE_L298_DRIVER
+#define USE_DRV8833
+// #define USE_L298_DRIVER
 // #define USE_BTS7960_DRIVER
 // #define USE_ESC
 
 //uncomment the IMU you're using
-#define USE_GY85_IMU
-// #define USE_MPU6050_IMU
+//#define USE_GY85_IMU
+  #define USE_MPU6050_IMU
 // #define USE_MPU9150_IMU
 // #define USE_MPU9250_IMU
 
 #define DEBUG 1
-
 #define K_P 0.6 // P constant
 #define K_I 0.3 // I constant
 #define K_D 0.5 // D constant
@@ -43,42 +42,17 @@ Developer @Hi-Techno Barrio
 /// ENCODER PINS
 #define MOTOR1_ENCODER_A 15
 #define MOTOR1_ENCODER_B 14 
-
 #define MOTOR2_ENCODER_A 11
 #define MOTOR2_ENCODER_B 12 
 
-#define MOTOR3_ENCODER_A 17
-#define MOTOR3_ENCODER_B 16 
-
-#define MOTOR4_ENCODER_A 9
-#define MOTOR4_ENCODER_B 10
-
 //MOTOR PINS
 #ifdef USE_DRV8833_DRIVER
-  #define MOTOR_DRIVER L298
+  #define MOTOR_DRIVER DRV8833
 
-  #define MOTOR1_PWM 21
-  #define MOTOR1_IN_A 20
-  #define MOTOR1_IN_B 1
-
-  #define MOTOR2_PWM 5
-  #define MOTOR2_IN_A 8
-  #define MOTOR2_IN_B 6
-
-  #define MOTOR3_PWM 22
-  #define MOTOR3_IN_A 23
-  #define MOTOR3_IN_B 0
-
-  #define MOTOR4_PWM 4
-  #define MOTOR4_IN_A 2
-  #define MOTOR4_IN_B 3
-
-  #define PWM_MAX pow(2, PWM_BITS) - 1
-  #define PWM_MIN -PWM_MAX
+#define MOTOR1_IN_A 20
+#define MOTOR1_IN_B 1
+#define MOTOR2_IN_A 8
+#define MOTOR2_IN_B 6
 #endif 
-
-
-
-#define STEERING_PIN 7
 
 #endif
