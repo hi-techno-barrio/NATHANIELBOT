@@ -1,14 +1,14 @@
 #ifndef MOTOR_H
 #define MOTOR_H
 
-#include <Servo.h> 
+
 #include <Arduino.h>
-#include "lino_base_config.h"
+#include "config.h"
 
 class Controller
 {
     public:
-        enum driver {L298,MOTO, BTS7960, ESC};
+        enum driver {DRV8833,L298,MOTO, BTS7960, ESC};
         Controller(driver motor_driver, int pwm_pin, int motor_pinA, int motor_pinB);
         void spin(int pwm);
   
