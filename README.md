@@ -4,18 +4,23 @@ Featuring  NathanielBot board which is a compact set of modules for robotics.
 Main board:
 
 Single board computer
+
 Microcontroller
 
 Sensors:
 
 Inertial Measurement Unit
+
 Microphone
+
 USB camera
+
 Wifi/LAN
 
 Add-ons:
 
 Speaker
+
 Auxilliary
 
 Power source:
