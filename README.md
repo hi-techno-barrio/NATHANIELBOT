@@ -1,13 +1,13 @@
 NATHANIELBOT is an an autonomous ROS based  micro-wheeled mobile robots.
 Featuring  NathanielBot board which is a compact set of modules for robotics.
 
-Main board:
+[Main board]
 
 Single board computer
 
 Microcontroller
 
-Sensors:
+[Sensors]
 
 Inertial Measurement Unit
 
@@ -17,13 +17,13 @@ USB camera
 
 Wifi/LAN
 
-Add-ons:
+[Add-ons]
 
 Speaker
 
 Auxilliary
 
-Power source:
+[Power source]
 
 Portable LiFe Battery
 
