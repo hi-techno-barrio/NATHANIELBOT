@@ -29,8 +29,8 @@ Portable LiFe Battery
 
 
 Reference:
-1) Software link https://github.com/hi-techno-barrio/NathanielBot-4.0
-2) Software link https://github.com/linorobot/linorobot
+1) Software (build) link https://github.com/hi-techno-barrio/NathanielBot-4.0
+2) Software(compatible) link https://github.com/linorobot/linorobot
 3) Software link ROS
 
 
